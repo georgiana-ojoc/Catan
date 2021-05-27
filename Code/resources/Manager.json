@@ -1,0 +1,125 @@
+[
+  {
+    "username": "username",
+    "password": "password",
+    "command": "newGame",
+    "arguments": {
+      "scenario": "SettlersOfCatan"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": {
+      "gameId": "gameId"
+    }
+  },
+  {
+    "username": "username",
+    "password": "password",
+    "command": "setMaxPlayers",
+    "arguments": {
+      "gameId": "gameId",
+      "maxPlayers": "a number between 3 and 6 (integer)"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "username": "username",
+    "password": "password",
+    "command": "addPlayer",
+    "arguments": {
+      "gameId": "gameId"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": {
+      "playerId": "playerId"
+    }
+  },
+  {
+    "username": "username",
+    "password": "password",
+    "command": "removePlayer",
+    "arguments": {
+      "gameId": "gameId",
+      "playerId": "playerId"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "username": "username",
+    "password": "password",
+    "command": "startGame",
+    "arguments": {
+      "gameId": "gameId"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": {
+      "board": "array of tiles",
+      "ports": "array of intersections"
+    }
+  },
+  {
+    "username": "username",
+    "password": "password",
+    "command": "changePlayerStatus",
+    "arguments": {
+      "gameId": "gameId",
+      "playerId": "playerId",
+      "active": "true or false (boolean)"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "username": "username",
+    "password": "password",
+    "command": "getRanking",
+    "arguments": {
+      "gameId": "gameId"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": {
+      "player_0": "playerId",
+      "publicScore_0": "number of public points, without Victory Points development cards (integer)",
+      "hiddenScore_0": "number of hidden points, with Victory Points development cards (integer)",
+      "player_1": "playerId",
+      "publicScore_1": "number of hidden points, with Victory Points development cards (integer)",
+      "hiddenScore_1": "number of hidden points, with Victory Points development cards (integer)",
+      "foundWinner": false
+    }
+  },
+  {
+    "username": "username",
+    "password": "password",
+    "command": "endGame",
+    "arguments": {
+      "gameId": "gameId"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  }
+]

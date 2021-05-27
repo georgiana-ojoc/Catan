@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FSM>
+    <STATE id="BuildingFirstSettlement">
+        <MESSAGE id="buildSettlement" action="buildSettlement" nextState="BuildingFirstRoad"/>
+    </STATE>
+    <STATE id="BuildingFirstRoad">
+        <MESSAGE id="buildRoad" action="buildRoad" nextState="BuildingSecondSettlement"/>
+    </STATE>
+    <STATE id="BuildingSecondSettlement">
+        <MESSAGE id="buildSettlement" action="buildSettlement" nextState="BuildingSecondRoad"/>
+    </STATE>
+    <STATE id="BuildingSecondRoad">
+        <MESSAGE id="buildRoad" action="buildRoad" nextState="Start"/>
+    </STATE>
+    <STATE id="Start" type="ID">
+        <MESSAGE id="rollDice" action="rollDice" nextState="Start"/>
+        <MESSAGE id="rollSeven" action="rollSeven" nextState="MovingRobber"/>
+        <MESSAGE id="rollNotSeven" action="rollNotSeven" nextState="Playing"/>
+    </STATE>
+    <STATE id="MovingRobber">
+        <MESSAGE id="moveRobber" action="moveRobber" nextState="StealingResource"/>
+    </STATE>
+    <STATE id="StealingResource">
+        <MESSAGE id="stealResource" action="stealResource" nextState="Playing"/>
+    </STATE>
+    <STATE id="Playing">
+        <MESSAGE id="playerTrade" action="playerTrade" nextState="Trading"/>
+        <MESSAGE id="noPlayerTrade" action="noPlayerTrade" nextState="Playing"/>
+        <MESSAGE id="buyRoad" action="buyRoad" nextState="Playing"/>
+        <MESSAGE id="buySettlement" action="buySettlement" nextState="Playing"/>
+        <MESSAGE id="buyCity" action="buyCity" nextState="Playing"/>
+        <MESSAGE id="buyDevelopment" action="buyDevelopment" nextState="Playing"/>
+        <MESSAGE id="useDevelopment" action="useDevelopment" nextState="Playing"/>
+        <MESSAGE id="useKnight" action="useKnight" nextState="MovingRobber"/>
+        <MESSAGE id="useMonopoly" action="useMonopoly" nextState="UsingMonopoly"/>
+        <MESSAGE id="useRoadBuilding" action="useRoadBuilding" nextState="UsingRoadBuilding"/>
+        <MESSAGE id="useYearOfPlenty" action="useYearOfPlenty" nextState="UsingYearOfPlenty"/>
+        <MESSAGE id="endTurn" action="endTurn" nextState="Start"/>
+        <MESSAGE id="endGame" action="endGame" nextState="EndGame"/>
+    </STATE>
+    <STATE id="Trading">
+        <MESSAGE id="sendPartners" action="sendPartners" nextState="Trading"/>
+        <MESSAGE id="selectPartner" action="selectPartner" nextState="Playing"/>
+    </STATE>
+    <STATE id="UsingMonopoly">
+        <MESSAGE id="takeResourceFromAll" action="takeResourceFromAll" nextState="Playing"/>
+    </STATE>
+    <STATE id="UsingRoadBuilding">
+        <MESSAGE id="buildDevelopmentRoad" action="buildDevelopmentRoad" nextState="UsingRoadBuilding"/>
+        <MESSAGE id="goNext" action="goNext" nextState="Playing"/>
+    </STATE>
+    <STATE id="UsingYearOfPlenty">
+        <MESSAGE id="takeTwoResources" action="takeTwoResources" nextState="Playing"/>
+    </STATE>
+    <STATE id="EndGame"/>
+</FSM>

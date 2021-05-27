@@ -1,0 +1,459 @@
+[
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "buildSettlement",
+    "arguments": {
+      "intersection": "number of intersection (integer)"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "buildRoad",
+    "arguments": {
+      "start": "number of first intersection (integer)",
+      "end": "number of last intersection (integer)"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "buildSettlement",
+    "arguments": {
+      "intersection": "number of intersection (integer)"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": {
+      "lumber": "number of received lumbers (integer)",
+      "wool": "number of received wools (integer)",
+      "grain": "number of received grains (integer)",
+      "brick": "number of received bricks (integer)",
+      "ore": "number of received ores (integer)"
+    }
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "buildRoad",
+    "arguments": {
+      "start": "number of first intersection (integer)",
+      "end": "number of last intersection (integer)"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "rollDice",
+    "arguments": null
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": {
+      "dice_0": "second dice value (integer)",
+      "dice_1": "first dice value (integer)",
+      "player_0": "playerId",
+      "lumber_0": "number of received lumbers (integer)",
+      "wool_0": "number of received wools (integer)",
+      "grain_0": "number of received grains (integer)",
+      "brick_0": "number of received bricks (integer)",
+      "ore_0": "number of received ores (integer)",
+      "resourcesToDiscard_0": "0 or half (rounded down) if rolled seven and has eight or more resources (integer)",
+      "player_1": "playerId",
+      "lumber_1": "number of received lumbers (integer)",
+      "wool_1": "number of received wools (integer)",
+      "grain_1": "number of received grains (integer)",
+      "brick_1": "number of received bricks (integer)",
+      "ore_1": "number of received ores (integer)",
+      "resourcesToDiscard_1": "0 or half (rounded down) if rolled seven and has eight or more resources (integer)"
+    }
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "discardResources",
+    "arguments": {
+      "lumber": "number of lumbers to discard (integer)",
+      "wool": "number of wools to discard (integer)",
+      "grain": "number of grains to discard (integer)",
+      "brick": "number of bricks to discard (integer)",
+      "ore": "number of ores to discard (integer)"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": {
+      "sentAll": "true or false (boolean)"
+    }
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "moveRobber",
+    "arguments": {
+      "tile": "a number between 0 and 18 (integer)"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": {
+      "player_0": "playerId from which to steal a resource",
+      "player_1": "playerId from which to steal a resource"
+    }
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "stealResource",
+    "arguments": {
+      "answer": "yes or no (just one per request)",
+      "player": "playerId"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": {
+      "resource": "stolen resource"
+    }
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "playerTrade",
+    "arguments": {
+      "lumber_o": "number of lumbers to offer (integer)",
+      "wool_o": "number of wools to offer (integer)",
+      "grain_o": "number of grains to offer (integer)",
+      "brick_o": "number of bricks to offer (integer)",
+      "ore_o": "number of ores to offer (integer)",
+      "lumber_r": "number of requested lumbers (integer)",
+      "wool_r": "number of requested wools (integer)",
+      "grain_r": "number of requested grains (integer)",
+      "brick_r": "number of requested bricks (integer)",
+      "ore_r": "number of requested ores (integer)"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "wantToTrade",
+    "arguments": null
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "sendPartners",
+    "arguments": null
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": {
+      "player_0": "playerId",
+      "player_1": "playerId"
+    }
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "selectPartner",
+    "arguments": {
+      "player": "playerId"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "noPlayerTrade",
+    "arguments": {
+      "port": "-1 if with bank or the number of the intersection of a port (integer)",
+      "offer": "offered resource",
+      "request": "requested resource"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "buyRoad",
+    "arguments": {
+      "start": "number of first intersection (integer)",
+      "end": "number of last intersection (integer)"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "buySettlement",
+    "arguments": {
+      "intersection": "number of intersection (integer)"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "buyCity",
+    "arguments": {
+      "intersection": "number of intersection (integer)"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "buyDevelopment",
+    "arguments": null
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": {
+      "development": "random bought development"
+    }
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "useDevelopment",
+    "arguments": {
+      "development": "knight"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "moveRobber",
+    "arguments": {
+      "tile": "a number between 0 and 18 (integer)"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": {
+      "player_0": "playerId from which to steal a resource",
+      "player_1": "playerId from which to steal a resource"
+    }
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "stealResource",
+    "arguments": {
+      "player": "playerId"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": {
+      "resource": "stolen resource"
+    }
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "useDevelopment",
+    "arguments": {
+      "development": "monopoly"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "takeResourceFromAll",
+    "arguments": {
+      "resource": "requested resource"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": {
+      "player_0": "playerId",
+      "resources_0": "number of resources to steal (integer)",
+      "player_1": "playerId",
+      "resources_1": "number of resources to steal (integer)"
+    }
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "useDevelopment",
+    "arguments": {
+      "development": "roadBuilding"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "buildDevelopmentRoad",
+    "arguments": {
+      "start": "number of first intersection",
+      "end": "number of last intersection"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "buildDevelopmentRoad",
+    "arguments": {
+      "start": "number of first intersection (integer)",
+      "end": "number of last intersection (integer)"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "useDevelopment",
+    "arguments": {
+      "development": "yearOfPlenty"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "takeTwoResources",
+    "arguments": {
+      "resource_0": "second requested resource",
+      "resource_1": "first requested resource"
+    }
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": null
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "update",
+    "arguments": null
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": {
+      "active": "true or false (boolean)",
+      "lumber": "number of owned lumbers (integer)",
+      "wool": "number of owned wools (integer)",
+      "grain": "number of owned grains (integer)",
+      "brick": "number of owned bricks (integer)",
+      "ore": "number of owned ores (integer)",
+      "knight": "number of owned knights (integer)",
+      "monopoly": "number of owned monopolies (integer)",
+      "roadBuilding": "number of owned roadBuildings (integer)",
+      "victoryPoint": "number of owned victoryPoints (integer)",
+      "yearOfPlenty": "number of owned yearsOfPlenty (integer)",
+      "usedKnights": "number of used Knight development cards (integer)",
+      "longestRoad": "length of longest road chain (integer)",
+      "roadsToBuild": "number of remaining roads to build when using Road Building development card",
+      "hasLargestArmy": "true or false (boolean)",
+      "hasLongestRoad": "true or false (boolean)",
+      "publicScore": "number of public points, without Victory Points development cards (integer)",
+      "hiddenScore": "number of hidden points, with Victory Points development cards (integer)",
+      "canBuyRoad": "true or false (boolean)",
+      "canBuySettlement": "true or false (boolean)",
+      "canBuyCity": "true or false (boolean)",
+      "canBuyDevelopment": "true or false (boolean)"
+    }
+  },
+  {
+    "gameId": "gameId",
+    "playerId": "playerId",
+    "command": "endTurn",
+    "arguments": null
+  },
+  {
+    "code": "HttpStatus code",
+    "status": "message (success or error type)",
+    "arguments": {
+      "nextPlayer": "playerId"
+    }
+  }
+]
