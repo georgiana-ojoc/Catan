@@ -190,7 +190,7 @@ https://catan-engine.herokuapp.com/Catan/managerRequest/
  "arguments": null
 }
 ```
-### URL for POST requests regarding player actions:  
+### URL for POST requests regarding player actions (currently deactivated):  
 https://catan-engine.herokuapp.com/Catan/userRequest/
 # Build First Two Settlements and Roads
 ## Build a settlement for free
