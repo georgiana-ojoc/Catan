@@ -1,6 +1,6 @@
 ### [Trello board](https://trello.com/b/OGXjuf7D/game-engine)
 ### URL for POST requests regarding game configurations (currently deactivated):  
-https://catan-engine.herokuapp.com/Catan/managerRequest/
+https://catan-engine.herokuapp.com/Catan/managerRequest
 # Configure Game
 ## Create a game
 ```
@@ -191,7 +191,7 @@ https://catan-engine.herokuapp.com/Catan/managerRequest/
 }
 ```
 ### URL for POST requests regarding player actions (currently deactivated):  
-https://catan-engine.herokuapp.com/Catan/userRequest/
+https://catan-engine.herokuapp.com/Catan/userRequest
 # Build First Two Settlements and Roads
 ## Build a settlement for free
 ``` 
